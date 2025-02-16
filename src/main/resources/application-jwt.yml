@@ -1,0 +1,3 @@
+app:
+  jwt-secret: lkgj49890lkmaslej043t9aas9433a3jzvrjdy6i8oghm
+  jwt-expiration: 36000000

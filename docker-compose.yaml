@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: copywise-app
+    ports:
+      - "8091:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/copy_wise_db
+      SPRING_DATASOURCE_USERNAME: copywise
+      SPRING_DATASOURCE_PASSWORD: copywise2025
+    networks:
+      - copywise-net
+
+  postgres:
+    image: postgres:15
+    container_name: copywise-db
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "copywise", "-d", "copy_wise_db" ]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+    ports:
+      - "5437:5432"
+    environment:
+      POSTGRES_DB: copy_wise_db
+      POSTGRES_USER: copywise
+      POSTGRES_PASSWORD: copywise2025
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - copywise-net
+
+volumes:
+  pgdata:
+
+networks:
+  copywise-net:
+

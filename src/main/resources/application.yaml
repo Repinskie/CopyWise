@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: jwt
+  application:
+    name: copywise
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5437/copy_wise_db
+    username: copywise
+    password: copywise2025
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: users
+    show-sql: true
+
+  flyway:
+    schemas: users
+
+server:
+  port: 8091
+  servlet:
+    context-path: /copywise
