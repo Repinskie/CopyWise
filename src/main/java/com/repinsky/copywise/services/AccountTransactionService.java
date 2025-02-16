@@ -1,12 +1,10 @@
-package com.repinsky.copywise.services.accounttransaction;
+package com.repinsky.copywise.services;
 
 import com.repinsky.copywise.exceptions.AccountNotFoundException;
 import com.repinsky.copywise.exceptions.IllegalArgumentException;
 import com.repinsky.copywise.exceptions.InsufficientFundsException;
 import com.repinsky.copywise.models.Account;
 import com.repinsky.copywise.repositories.AccountRepository;
-import com.repinsky.copywise.services.AccountPersistenceService;
-import com.repinsky.copywise.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

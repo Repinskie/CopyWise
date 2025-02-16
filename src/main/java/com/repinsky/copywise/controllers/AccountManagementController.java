@@ -2,7 +2,7 @@ package com.repinsky.copywise.controllers;
 
 import com.repinsky.copywise.dtos.AccountResponseDto;
 import com.repinsky.copywise.dtos.StringResponse;
-import com.repinsky.copywise.services.accountmanagement.AccountManagementService;
+import com.repinsky.copywise.services.AccountManagementService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

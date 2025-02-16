@@ -1,4 +1,4 @@
-package com.repinsky.copywise.services.accountmanagement;
+package com.repinsky.copywise.services;
 
 import com.repinsky.copywise.converters.AccountConverter;
 import com.repinsky.copywise.dtos.AccountResponseDto;
@@ -8,8 +8,6 @@ import com.repinsky.copywise.models.Account;
 import com.repinsky.copywise.models.User;
 import com.repinsky.copywise.repositories.AccountRepository;
 import com.repinsky.copywise.repositories.UserRepository;
-import com.repinsky.copywise.services.AccountPersistenceService;
-import com.repinsky.copywise.services.UserService;
 import com.repinsky.copywise.utils.AccountNumberGenerator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
