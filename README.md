@@ -28,3 +28,18 @@ A simple REST API for a banking application supporting basic operations like acc
    ```bash
    git clone https://github.com/Repinskie/CopyWise.git
    cd CopyWise
+
+## Environment Variables
+
+Default environment variables are provided for ease of testing. Adjust as needed in your local environment or in the `docker-compose.yml`.
+
+## Build the Application
+
+```bash
+docker-compose up --build 
+```
+
+## You can test the application via Postman at:
+```bash
+http://localhost:8091/copywise
+```
