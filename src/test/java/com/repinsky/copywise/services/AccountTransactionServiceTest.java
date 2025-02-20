@@ -77,7 +77,6 @@ class AccountTransactionServiceTest {
     @Test
     void testDoTheWithdraw_ValidAmount() {
         BigDecimal withdrawAmount = BigDecimal.valueOf(200);
-        // предполагаем, что email текущего пользователя: "user@example.com"
         when(userService.getCurrentUserEmail()).thenReturn("user@example.com");
         when(accountRepository.findByAccountNumberAndUserEmail("5000015553748387", "user@example.com"))
                 .thenReturn(Optional.of(account));
