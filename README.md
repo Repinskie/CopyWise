@@ -14,7 +14,7 @@ A simple REST API for a banking application supporting basic operations like acc
   - Withdraw funds
   - Transfer funds between accounts
 
-- **Technology Stack**
+- **Technology Stack:**
   - **Java** & **Spring Boot**
   - **PostgreSQL**
   - **JWT** for authentication
