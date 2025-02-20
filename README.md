@@ -4,12 +4,12 @@ A simple REST API for a banking application supporting basic operations like acc
 
 ## Features
 
-- **Account Management**
+- **Account Management:**
   - Create new accounts (initial balance set to zero)
   - Retrieve account details by account number
   - List all accounts for a user
 
-- **Account Transactions**
+- **Account Transactions:**
   - Deposit funds
   - Withdraw funds
   - Transfer funds between accounts
