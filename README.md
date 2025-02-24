@@ -43,7 +43,3 @@ docker-compose up --build
 ```bash
 http://localhost:8091/copywise
 ```
-
-## Project schema:
-```bash
-https://lucid.app/lucidchart/dc181348-abb9-4914-acd6-da47413fc65a/edit?invitationId=inv_a4d48b89-1fbc-49c6-a2c6-b11c9cc6a069&page=0_0#
